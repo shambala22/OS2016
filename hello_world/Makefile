@@ -1,7 +1,7 @@
 all: hello_world
 
 clean: 
-	rm hello_world hello_world.o
+	rm -f hello_world hello_world.o
 
 hello_world.o: hello_world.c
 	gcc $< -o $@ -c
